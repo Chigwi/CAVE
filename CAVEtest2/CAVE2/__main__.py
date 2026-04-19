@@ -12,9 +12,9 @@ def resource_path(relative):
 #checks the current linux distro
 def check_disto():
     #rcieves the output containing the current distro
-    retorno = subprocess.run(['cat', '/etc/os-release'], capture_output =True, text = True)
+    ret = subprocess.run(['cat', '/etc/os-release'], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     #lower case xd
-    output = retorno.stdout.lower()
+    output = ret.stdout.lower()
     #checks the output to see which distro is current and returns
     if ('debian' in output or 'ubuntu' in output):
         return 'apt'
