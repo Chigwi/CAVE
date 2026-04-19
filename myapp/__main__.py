@@ -47,6 +47,7 @@ def main():
     # Load the image from inside the package
     # "myapp.resources.images" is the dotted path to the images folder
     # "me-fr-cat.png" is the filename — change this to match yours
+
     img = load_image("myapp.resources.images", "me-fr-cat.png")
 
     # Standard tkinter window
