@@ -10,9 +10,9 @@ def resource_path(relative):
 def install_roms():
 
     #checks if retroarch is installed
-    if (1 == 1):
+    if (os.system('cat /etc/os-release | grep ID') == "debian" or os.system('cat /etc/os-release | grep ID') == "ubuntu" or os.system('cat /etc/os-release | grep ID_LIKE') == "ubuntu debian"):
         os.system('sudo apt install retroarch')
-    elif(2 == 2):
+    elif(os.system('cat /etc/os-release | grep ID') == "fedora" or os.system('cat /etc/os-release | grep ID_LIKE') == "fedora"):
         os.system('sudo dnf install retroarch')
     else:
         os.system('sudo pacman -S retroarch')
