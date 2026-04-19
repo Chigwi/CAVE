@@ -2,21 +2,40 @@
 import sys
 import os
 import shutil
+import subprocess
 
 def resource_path(relative):
     base = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
     return os.path.join(base, relative)
 
+def check_disto():
+
+    retorno = subprocess.run(['cat', '/etc/os-release'], capture_output == true, text == true)
+    output = retorno.stdout.lower()
+    #checks if retroarch is installed
+    if ('debian' in output or 'ubuntu' in output):
+        return 'apt'
+    elif('fedora' in output):
+        return 'dnf'
+    else:
+        return 'pacman'
+
+def install_retroarch(distro):
+    if (shutil.which('retroarch') is not None):
+        print('spp: Sub Proseso de Paso')
+        return
+    elif (distro == 'apt'):
+        os.system('sudo apt install retroarch')
+    elif (distro == 'dnf'):
+        os.system('sudo dnf install retroarch')
+    elif (distro == 'pacman'):
+        os.system('sudo pacman -S retroarch')
+    
+
 def install_roms():
 
-    #checks if retroarch is installed
-    if (os.system('cat /etc/os-release | grep ID') == "debian" or os.system('cat /etc/os-release | grep ID') == "ubuntu" or os.system('cat /etc/os-release | grep ID_LIKE') == "ubuntu debian"):
-        os.system('sudo apt install retroarch')
-    elif(os.system('cat /etc/os-release | grep ID') == "fedora" or os.system('cat /etc/os-release | grep ID_LIKE') == "fedora"):
-        os.system('sudo dnf install retroarch')
-    else:
-        os.system('sudo pacman -S retroarch')
-
+    distro = check_disto()
+    install_retroarch(distro)
     #path where the ROMs are being stored
     source = resource_path('resources/ROMS')
 
