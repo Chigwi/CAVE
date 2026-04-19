@@ -6,5 +6,11 @@
     </content>
     <orderEntry type="jdk" jdkName="Python 3.14 (CAVEtest1)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="CAVEtest2" />
+    <orderEntry type="module" module-name="spp" />
+    <orderEntry type="module" module-name="CAVEtest3" />
+    <orderEntry type="module" module-name="CAVEtest4" />
+    <orderEntry type="module" module-name="CAVEtest-2" />
+    <orderEntry type="module" module-name="CAVEtest_2" />
   </component>
 </module>

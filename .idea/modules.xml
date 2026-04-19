@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$USER_HOME$/CAVElocal/CAVEtest-2/.idea/CAVEtest-2.iml" filepath="$USER_HOME$/CAVElocal/CAVEtest-2/.idea/CAVEtest-2.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/CAVEtest1.iml" filepath="$PROJECT_DIR$/.idea/CAVEtest1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../CAVEtest2/.idea/CAVEtest2.iml" filepath="$PROJECT_DIR$/../CAVEtest2/.idea/CAVEtest2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../CAVEtest3/.idea/CAVEtest3.iml" filepath="$PROJECT_DIR$/../CAVEtest3/.idea/CAVEtest3.iml" />
+      <module fileurl="file://$USER_HOME$/Escritorio/CAVE/CAVEtest4/.idea/CAVEtest4.iml" filepath="$USER_HOME$/Escritorio/CAVE/CAVEtest4/.idea/CAVEtest4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../../../CAVE/CAVEtest_2/.idea/CAVEtest_2.iml" filepath="$PROJECT_DIR$/../../../../../../CAVE/CAVEtest_2/.idea/CAVEtest_2.iml" />
+      <module fileurl="file://$USER_HOME$/PycharmProjects/spp/.idea/spp.iml" filepath="$USER_HOME$/PycharmProjects/spp/.idea/spp.iml" />
     </modules>
   </component>
 </project>
