@@ -5,14 +5,20 @@ from CAVE3.installer.distro import DistroChecker
 
 class Installer:
 
+    #initializes the class
     def __init__(self):
+        #brings the distro checker
         self.distro = DistroChecker()
+        #adds the path of where the ROMS are
         self.dest = os.path.expanduser('~/.config/retroarch/ROMS')
 
-
+    #runs the processes in order
     def run(self):
+        #checks the distro being used
         package_manager = self.distro.get_package_manager()
+        #checks retroarch
         self._install_retroarch(package_manager)
+        #installs the ROMS
         self._install_roms()
 
     # install retroarch
