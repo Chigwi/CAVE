@@ -1,6 +1,6 @@
-from installer.installer import Installer
+from installer.Rom import ROMInstaller
 
 #main function runs the installer
 if __name__ == "__main__":
-    installer = Installer()
-    installer.run()
+    ROMinstaller = ROMInstaller()
+    ROMinstaller.run()

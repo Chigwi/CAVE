@@ -3,7 +3,7 @@ import os
 import shutil
 from CAVE3.installer.distro import DistroChecker
 
-class Installer:
+class ROMInstaller:
 
     #initializes the class
     def __init__(self):
