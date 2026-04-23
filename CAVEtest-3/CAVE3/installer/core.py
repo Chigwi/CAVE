@@ -3,28 +3,27 @@ import sys
 import os
 import shutil
 from CAVE3.installer.distro import DistroChecker
+from CAVE3.installer.retrochecker import RetroarchChecker
 
 class CoreInstaller:
 
     def __init__(self):
         # brings the distro checker
         self.distro = DistroChecker()
+        #brings the retrochecker
+        self.retrochecker = RetroarchChecker()
         # adds the path of where the ROMS are
         self.dest = os.path.expanduser('~/.config/retroarch/cores')
 
-# install retroarch, hopefully dead code as retroarch should already be installed
-    def _install_retroarch(self, package_manager):
-            # checks if retroarch is already installed
-            if (shutil.which('retroarch') is not None):
-                print('Retroarch executable found skipping installation')
-                return
-            # installs retroarch acording to the current distro
-            elif (package_manager == 'apt'):
-                os.system('sudo apt install retroarch')
-            elif (package_manager == 'dnf'):
-                os.system('sudo dnf install retroarch')
-            elif (package_manager == 'pacman'):
-                os.system('sudo pacman -S retroarch')
+
+    #runs the processes in order
+    def run(self):
+        #checks the distro being used
+        package_manager = self.distro.get_package_manager()
+        #checks retroarch
+        self.retrochecker.install_retroarch(package_manager)
+        #installs the ROMS
+        self._install_cores()
 
 
     #main function, installs the needed cores onto the retroarch machine

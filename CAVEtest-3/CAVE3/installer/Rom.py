@@ -2,6 +2,7 @@ import sys
 import os
 import shutil
 from CAVE3.installer.distro import DistroChecker
+from CAVE3.installer.retrochecker import RetroarchChecker
 
 class ROMInstaller:
 
@@ -9,6 +10,8 @@ class ROMInstaller:
     def __init__(self):
         #brings the distro checker
         self.distro = DistroChecker()
+        #brings the retrochecker
+        self.retrochecker = RetroarchChecker()
         #adds the path of where the ROMS are
         self.dest = os.path.expanduser('~/.config/retroarch/ROMS')
 
@@ -17,23 +20,10 @@ class ROMInstaller:
         #checks the distro being used
         package_manager = self.distro.get_package_manager()
         #checks retroarch
-        self._install_retroarch(package_manager)
+        self.retrochecker.install_retroarch(package_manager)
         #installs the ROMS
         self._install_roms()
 
-    # install retroarch
-    def _install_retroarch(self, package_manager):
-            # checks if retroarch is already installed
-            if (shutil.which('retroarch') is not None):
-                print('Retroarch executable found skipping installation')
-                return
-            # installs retroarch acording to the current distro
-            elif (package_manager == 'apt'):
-                os.system('sudo apt install retroarch')
-            elif (package_manager == 'dnf'):
-                os.system('sudo dnf install retroarch')
-            elif (package_manager == 'pacman'):
-                os.system('sudo pacman -S retroarch')
 
 
     # main function installs ROMS from package
