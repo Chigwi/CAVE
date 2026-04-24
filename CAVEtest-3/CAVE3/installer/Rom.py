@@ -1,17 +1,16 @@
 import sys
 import os
 import shutil
-from CAVE3.installer.distro import DistroChecker
-from CAVE3.installer.retrochecker import RetroarchChecker
+
 
 class ROMInstaller:
 
     #initializes the class
-    def __init__(self):
+    def __init__(self, distro, checker):
         #brings the distro checker
-        self.distro = DistroChecker()
+        self.distro = distro
         #brings the retrochecker
-        self.retrochecker = RetroarchChecker()
+        self.retrochecker = checker
         #adds the path of where the ROMS are
         self.dest = os.path.expanduser('~/.config/retroarch/ROMS')
 
@@ -47,7 +46,7 @@ class ROMInstaller:
 
         print("Installation complete")
 
-    def resource_path(relative):
+    def _resource_path(self, relative):
         base = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
         return os.path.join(base, relative)
 
