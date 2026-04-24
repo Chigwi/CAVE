@@ -1,10 +1,17 @@
 import os
 
-from CAVE3.installer.Rom import ROMInstaller
-from CAVE3.installer.core import CoreInstaller
-from CAVE3.installer.distro import DistroChecker
-from CAVE3.installer.playlist import PlaylistInstaller
-from CAVE3.installer.retrochecker import RetroarchChecker
+try:
+    from installer.Rom import ROMInstaller
+    from installer.core import CoreInstaller
+    from installer.distro import DistroChecker
+    from installer.playlist import PlaylistInstaller
+    from installer.retrochecker import RetroarchChecker
+except ImportError:
+    from CAVE3.installer.Rom import ROMInstaller
+    from CAVE3.installer.core import CoreInstaller
+    from CAVE3.installer.distro import DistroChecker
+    from CAVE3.installer.playlist import PlaylistInstaller
+    from CAVE3.installer.retrochecker import RetroarchChecker
 
 
 class InstallationManager:

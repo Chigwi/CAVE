@@ -2,7 +2,10 @@
 import sys
 import os
 import shutil
-from CAVE3.installer.distro import DistroChecker
+try:
+    from installer.distro import DistroChecker
+except ImportError:
+    from CAVE3.installer.distro import DistroChecker
 
 class RetroarchChecker:
 
