@@ -1,0 +1,83 @@
+{
+  "version": "1.5",
+  "default_core_path": "",
+  "default_core_name": "",
+  "label_display_mode": 0,
+  "right_thumbnail_mode": 0,
+  "left_thumbnail_mode": 0,
+  "thumbnail_match_mode": 0,
+  "sort_mode": 0,
+  "items": [
+    {
+      "path": "~/.config/retroarch/ROMS/nintendo_ds/Animal Crossing - Wild World (USA) (Rev 1).zip",
+      "label": "Animal Crossing (USA)",
+      "core_path": "~/.config/retroarch/cores/desmume_libretro.so/",
+      "core_name": "Nintendo DS",
+      "crc32": "28ACD394|crc",
+      "db_name": "Nintendo - Nintendo DS.lpl"
+    },{
+      "path": "~/.config/retroarch/ROMS/nintendo_ds/Final Fantasy III (USA).zip",
+      "label": "Final Fantasy III (USA)",
+      "core_path": "~/.config/retroarch/cores/desmume_libretro.so/",
+      "core_name": "Nintendo DS",
+      "crc32": "28ACD394|crc",
+      "db_name": "Nintendo - Nintendo DS.lpl"
+    },{
+      "path": "~/.config/retroarch/ROMS/nintendo_ds/Legend of Zelda, The - Spirit Tracks (USA) (En,Fr,Es) (Rev 1)_apfix.zip",
+      "label": "Legend of Zelda The Spirit Tracks",
+      "core_path": "~/.config/retroarch/cores/desmume_libretro.so/",
+      "core_name": "Nintendo DS",
+      "crc32": "28ACD394|crc",
+      "db_name": "Nintendo - Nintendo DS.lpl"
+    },{
+      "path": "~/.config/retroarch/ROMS/nintendo_ds/Mario & Luigi - Bowser's Inside Story (USA) (En,Fr,Es)_apfix.zip",
+      "label": "Mario & Luigi Bowswer's Inside Story (USA)",
+      "core_path": "~/.config/retroarch/cores/desmume_libretro.so/",
+      "core_name": "Nintendo DS",
+      "crc32": "28ACD394|crc",
+      "db_name": "Nintendo - Nintendo DS.lpl"
+    },{
+      "path": "~/.config/retroarch/ROMS/nintendo_ds/Mario Kart DS (USA) (En,Fr,De,Es,It).zip",
+      "label": "Mario Kart (USA)",
+      "core_path": "~/.config/retroarch/cores/desmume_libretro.so/",
+      "core_name": "Nintendo DS",
+      "crc32": "28ACD394|crc",
+      "db_name": "Nintendo - Nintendo DS.lpl"
+    },{
+      "path": "~/.config/retroarch/ROMS/nintendo_ds/Pokemon - Edicion Platino (Spain).zip",
+      "label": "Pokemon Platinum (Spain)",
+      "core_path": "~/.config/retroarch/cores/desmume_libretro.so/",
+      "core_name": "Nintendo DS",
+      "crc32": "28ACD394|crc",
+      "db_name": "Nintendo - Nintendo DS.lpl"
+    },{
+      "path": "~/.config/retroarch/ROMS/nintendo_ds/Pokemon - SoulSilver Version (USA, Australia)_apfix.zip",
+      "label": "Pokemon SoulSilver (USA, Australia)",
+      "core_path": "~/.config/retroarch/cores/desmume_libretro.so/",
+      "core_name": "Nintendo DS",
+      "crc32": "28ACD394|crc",
+      "db_name": "Nintendo - Nintendo DS.lpl"
+    },{
+      "path": "~/.config/retroarch/ROMS/nintendo_ds/Pokemon Mystery Dungeon - Blue Rescue Team (USA).zip",
+      "label": "Pokemon Mystery Dungeon (USA)",
+      "core_path": "~/.config/retroarch/cores/desmume_libretro.so/",
+      "core_name": "Nintendo DS",
+      "crc32": "28ACD394|crc",
+      "db_name": "Nintendo - Nintendo DS.lpl"
+    },{
+      "path": "~/.config/retroarch/ROMS/nintendo_ds/Super Mario 64 DS (USA) (Rev 1).zip",
+      "label": "Super Mario 64 DS (USA)",
+      "core_path": "~/.config/retroarch/cores/desmume_libretro.so/",
+      "core_name": "Nintendo DS",
+      "crc32": "28ACD394|crc",
+      "db_name": "Nintendo - Nintendo DS.lpl"
+    },{
+      "path": "~/.config/retroarch/ROMS/nintendo_ds/Tetris DS (USA).zip",
+      "label": "Tetris (USA)",
+      "core_path": "~/.config/retroarch/cores/desmume_libretro.so/",
+      "core_name": "Nintendo DS",
+      "crc32": "28ACD394|crc",
+      "db_name": "Nintendo - Nintendo DS.lpl"
+    }
+  ]
+}
