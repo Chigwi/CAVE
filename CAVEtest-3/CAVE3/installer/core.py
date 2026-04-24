@@ -6,21 +6,13 @@ import shutil
 
 class CoreInstaller:
 
-    def __init__(self, distro, checker):
-        # brings the distro checker
-        self.distro = distro
-        #brings the retrochecker
-        self.retrochecker = checker
+    def __init__(self):
         # adds the path of where the ROMS are
         self.dest = os.path.expanduser('~/.config/retroarch/cores')
 
 
     #runs the processes in order
     def run(self):
-        #checks the distro being used
-        package_manager = self.distro.get_package_manager()
-        #checks retroarch
-        self.retrochecker.install_retroarch(package_manager)
         #installs the cores
         self._install_cores()
 

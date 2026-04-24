@@ -13,11 +13,11 @@ class InstallationManager:
         #birngs the new retrochecker
         self.checker = RetroarchChecker()
         #brings the new rominstaller
-        self.romInstaller = ROMInstaller(self.distro, self.checker)
+        self.romInstaller = ROMInstaller()
         #brings the new coreinstaller
-        self.coreInstaller = CoreInstaller(self.distro, self.checker)
+        self.coreInstaller = CoreInstaller()
         #brings the new plinstaller
-        self.playlistInstaller = PlaylistInstaller(self.distro, self.checker)
+        self.playlistInstaller = PlaylistInstaller()
 
     def install(self):
         #checks the distro

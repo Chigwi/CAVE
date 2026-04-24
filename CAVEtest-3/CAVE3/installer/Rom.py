@@ -6,20 +6,12 @@ import shutil
 class ROMInstaller:
 
     #initializes the class
-    def __init__(self, distro, checker):
-        #brings the distro checker
-        self.distro = distro
-        #brings the retrochecker
-        self.retrochecker = checker
+    def __init__(self):
         #adds the path of where the ROMS are
         self.dest = os.path.expanduser('~/.config/retroarch/ROMS')
 
     #runs the processes in order
     def run(self):
-        #checks the distro being used
-        package_manager = self.distro.get_package_manager()
-        #checks retroarch
-        self.retrochecker.install_retroarch(package_manager)
         #installs the ROMS
         self._install_roms()
 
