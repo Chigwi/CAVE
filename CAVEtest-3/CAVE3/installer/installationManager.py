@@ -1,3 +1,5 @@
+import os
+
 from CAVE3.installer.Rom import ROMInstaller
 from CAVE3.installer.core import CoreInstaller
 from CAVE3.installer.distro import DistroChecker
@@ -28,3 +30,5 @@ class InstallationManager:
         self.coreInstaller.run()
         self.romInstaller.run()
         self.playlistInstaller.run()
+        #opens retroarch
+        os.system('retroarch')
