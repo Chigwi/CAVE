@@ -2,7 +2,10 @@
 import sys
 import os
 import shutil
-
+try:
+    from installer.retrokiller import RetroKiller
+except ImportError:
+    from CAVE3.installer.retrokiller import RetroKiller
 class Configuration:
 
     def __init__(self):
@@ -14,6 +17,7 @@ class Configuration:
     def run(self):
         #installs the configuration
         self._install_configuration()
+        self.retroKiller = RetroKiller()
 
 
     #main function, installs the needed configuration onto the retroarch machine
@@ -35,9 +39,12 @@ class Configuration:
         #modifies the permissions of the core files
         os.system(f"chmod -R 755  '{self.dest}'")
 
-        print("config successfully installed")
+        print("config successfully installed ")
 
         os.system("retroarch -c ~/.config/retroarch/config/config.cfg")
+
+        print('restarting...')
+        self.retroKiller.restart()
 
         print("config set to config.cfg")
 
