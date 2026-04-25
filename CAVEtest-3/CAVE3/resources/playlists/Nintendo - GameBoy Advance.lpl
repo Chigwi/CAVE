@@ -9,9 +9,9 @@
   "sort_mode": 0,
   "items": [
     {
-      "path": "~/.config/retroarch/ROMS/gameboy_advance/Doom.7z,
+      "path": "~/.config/retroarch/ROMS/gameboy_advance/Doom.7z",
       "label": "Doom",
-      "core_path": "~/.config/retroarch/cores/mgba_libretro.SO",
+      "core_path": "~/.config/retroarch/cores/mgba_libretro.so",
       "core_name": "GameBoy Advance",
       "crc32": "DETECT",
       "db_name": "Nintendo - GameBoy Advance.lpl"
@@ -19,7 +19,7 @@
      {
       "path": "~/.config/retroarch/ROMS/gameboy_advance/Mario Kart Super Circuit.7z",
       "label": "Mario Kart Super Circuit",
-      "core_path": "~/.config/retroarch/cores/mgba_libretro.SO",
+      "core_path": "~/.config/retroarch/cores/mgba_libretro.so",
       "core_name": "GameBoy Advance",
       "crc32": "DETECT",
       "db_name": "Nintendo - GameBoy Advance.lpl"
@@ -27,7 +27,7 @@
      {
       "path": "~/.config/retroarch/ROMS/gameboy_advance/Mario Party Advance.7z",
       "label": "Mario Party Advance",
-      "core_path": "~/.config/retroarch/cores/mgba_libretro.SO",
+      "core_path": "~/.config/retroarch/cores/mgba_libretro.so",
       "core_name": "GameBoy Advance",
       "crc32": "DETECT",
       "db_name": "Nintendo - GameBoy Advance.lpl"
@@ -35,7 +35,7 @@
      {
       "path": "~/.config/retroarch/ROMS/gameboy_advance/Mortal Kombat - Deadly Alliance.7z",
       "label": "Mortal Kombat - Deadly Alliance",
-      "core_path": "~/.config/retroarch/cores/mgba_libretro.SO",
+      "core_path": "~/.config/retroarch/cores/mgba_libretro.so",
       "core_name": "GameBoy Advance",
       "crc32": "DETECT",
       "db_name": "Nintendo - GameBoy Advance.lpl"
@@ -43,7 +43,7 @@
      {
       "path": "~/.config/retroarch/ROMS/gameboy_advance/Pokemon - Emerald Version (USA, Europe).zip",
       "label": "Pokemon - Emerald Version (USA)",
-      "core_path": "~/.config/retroarch/cores/mgba_libretro.SO",
+      "core_path": "~/.config/retroarch/cores/mgba_libretro.so",
       "core_name": "GameBoy Advance",
       "crc32": "DETECT",
       "db_name": "Nintendo - GameBoy Advance.lpl"
@@ -51,7 +51,7 @@
      {
       "path": "~/.config/retroarch/ROMS/gameboy_advance/Kingdom Hearts_ Chain of memories.zip",
       "label": "Kingdom Hearts - Chain of memories",
-      "core_path": "~/.config/retroarch/cores/mgba_libretro.SO",
+      "core_path": "~/.config/retroarch/cores/mgba_libretro.so",
       "core_name": "GameBoy Advance",
       "crc32": "DETECT",
       "db_name": "Nintendo - GameBoy Advance.lpl"
@@ -59,7 +59,7 @@
      {
       "path": "~/.config/retroarch/ROMS/gameboy_advance/Pokemon - Leaf Green Version.7z",
       "label": "Pokemon - Leaf Green Version",
-      "core_path": "~/.config/retroarch/cores/mgba_libretro.SO",
+      "core_path": "~/.config/retroarch/cores/mgba_libretro.so",
       "core_name": "GameBoy Advance",
       "crc32": "DETECT",
       "db_name": "Nintendo - GameBoy Advance.lpl"
@@ -67,7 +67,7 @@
      {
       "path": "~/.config/retroarch/ROMS/gameboy_advance/Pokemon Mystery Dungeon - Red Rescue Team.7z",
       "label": "Pokemon Mystery Dungeon - Red Rescue Team",
-      "core_path": "~/.config/retroarch/cores/mgba_libretro.SO",
+      "core_path": "~/.config/retroarch/cores/mgba_libretro.so",
       "core_name": "GameBoy Advance",
       "crc32": "DETECT",
       "db_name": "Nintendo - GameBoy Advance.lpl"
@@ -75,7 +75,7 @@
      {
       "path": "~/.config/retroarch/ROMS/gameboy_advance/Sonic Advance.7z",
       "label": "Sonic Advance",
-      "core_path": "~/.config/retroarch/cores/mgba_libretro.SO",
+      "core_path": "~/.config/retroarch/cores/mgba_libretro.so",
       "core_name": "GameBoy Advance",
       "crc32": "DETECT",
       "db_name": "Nintendo - GameBoy Advance.lpl"
@@ -83,7 +83,7 @@
      {
       "path": "~/.config/retroarch/ROMS/gameboy_advance/Super Mario Advance.7z",
       "label": "Super Mario Advance",
-      "core_path": "~/.config/retroarch/cores/mgba_libretro.SO",
+      "core_path": "~/.config/retroarch/cores/mgba_libretro.so",
       "core_name": "GameBoy Advance",
       "crc32": "DETECT",
       "db_name": "Nintendo - GameBoy Advance.lpl"
