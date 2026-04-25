@@ -12,6 +12,7 @@ except ImportError:
     from CAVE3.installer.distro import DistroChecker
     from CAVE3.installer.playlist import PlaylistInstaller
     from CAVE3.installer.retrochecker import RetroarchChecker
+    from CAVE3.installer.config import Configuration
 
 
 class InstallationManager:
@@ -27,6 +28,8 @@ class InstallationManager:
         self.coreInstaller = CoreInstaller()
         #brings the new plinstaller
         self.playlistInstaller = PlaylistInstaller()
+        #brings the relevant configuration
+        self.configInstaller = Configuration()
 
     def install(self):
         #checks the distro
@@ -37,5 +40,5 @@ class InstallationManager:
         self.coreInstaller.run()
         self.romInstaller.run()
         self.playlistInstaller.run()
-        #opens retroarch
-        os.system('retroarch')
+        self.configInstaller.run()
+        #comentario
