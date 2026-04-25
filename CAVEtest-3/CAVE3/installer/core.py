@@ -7,7 +7,7 @@ import shutil
 class CoreInstaller:
 
     def __init__(self):
-        # adds the path of where the ROMS are
+        # adds the path of where the Cores are
         self.dest = os.path.expanduser('~/.config/retroarch/cores')
 
 
