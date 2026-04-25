@@ -48,11 +48,15 @@ class InstallationManager:
         self.romInstaller.run()
         self.playlistInstaller.run()
 
+        print('abre retroarch para crear archivo .cfg')
         self.retrokiller.safeStart()
-        time.sleep(2)
+        time.sleep(1)
+        print ('cierra retroarch')
         self.retrokiller.safeStart()
 
+        print('instala nuevo archivo .cfg')
         self.configInstaller.run()
 
+        print('abre y reinicia')
         self.retrokiller.safeStart()
         self.retrokiller.restart()
