@@ -37,6 +37,10 @@ class Configuration:
 
         print("config successfully installed")
 
+        os.system("retroarch -c ~/.config/retroarch/config/config.cfg")
+
+        print("config set to config.cfg")
+
     def _resource_path(self, relative):
         base = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
         return os.path.join(base, relative)
