@@ -41,12 +41,12 @@ class Configuration:
 
         print("config successfully installed ")
 
-        os.system("retroarch -c ~/.config/retroarch/config/config.cfg && pkill retroarch")
+        os.system("retroarch -c ~/.config/retroarch/config/retroarch.cfg && pkill retroarch")
 
         print('restarting...')
         #self.retroKiller.restart()
 
-        print("config set to config.cfg")
+        print("config set to retroarch.cfg")
 
     def _resource_path(self, relative):
         base = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
