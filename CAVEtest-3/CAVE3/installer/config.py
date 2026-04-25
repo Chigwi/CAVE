@@ -41,10 +41,10 @@ class Configuration:
 
         print("config successfully installed ")
 
-        os.system("retroarch -c ~/.config/retroarch/config/config.cfg")
+        os.system("retroarch -c ~/.config/retroarch/config/config.cfg && pkill retroarch")
 
         print('restarting...')
-        self.retroKiller.restart()
+        #self.retroKiller.restart()
 
         print("config set to config.cfg")
 
