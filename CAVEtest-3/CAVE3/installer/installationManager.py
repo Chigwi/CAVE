@@ -47,10 +47,12 @@ class InstallationManager:
         self.coreInstaller.run()
         self.romInstaller.run()
         self.playlistInstaller.run()
+
+        self.retrokiller.safeStart()
+        time.sleep(2)
+        self.retrokiller.safeStart()
+
         self.configInstaller.run()
 
-        #waits for retroarch to open
-        time.sleep(2)
-        #restarts retroarch
+        self.retrokiller.safeStart()
         self.retrokiller.restart()
-        #comentario

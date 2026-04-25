@@ -7,6 +7,12 @@ import time
 
 class RetroKiller:
 
+    def safeStart(self):
+        self._birthRetroarch()
+
+    def safeStop(self):
+        self._killRetroarch()
+
     def restart(self):
         self._killRetroarch()
         time.sleep(3)
