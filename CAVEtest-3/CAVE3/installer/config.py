@@ -10,7 +10,7 @@ class Configuration:
 
     def __init__(self):
         # adds the path of where the config file is
-        self.retroKiller = None
+        self.retroKiller = RetroKiller()
         self.dest = os.path.expanduser('~/.config/retroarch/config')
 
 
@@ -41,7 +41,7 @@ class Configuration:
 
         print("config successfully installed ")
 
-        os.system("retroarch -c ~/.config/retroarch/config/config.cfg | pkill retroarch")
+        os.system("retroarch -c ~/.config/retroarch/config/config.cfg")
 
         print('restarting...')
         self.retroKiller.restart()
