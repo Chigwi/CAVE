@@ -29,9 +29,11 @@ class Configuration:
         #path of where the configuration should be saved for retroarch use
         print(f'Installing configuration into {self.dest}')
 
+        extraFile = os.path.expanduser('~/.config/retroarch/retroarch.cfg')
+
         #clean install protocol
-        if os.path.exists(self.dest):
-            shutil.rmtree(self.dest)
+        if os.path.exists(extraFile):
+            os.remove(extraFile)
 
         #moves the configuration to the target dir
         shutil.copytree(source, self.dest)
@@ -41,7 +43,7 @@ class Configuration:
 
         print("config successfully installed ")
 
-        os.system("retroarch -c ~/.config/retroarch/config/retroarch.cfg && pkill retroarch")
+        #os.system("retroarch -c ~/.config/retroarch/config/retroarch.cfg && pkill retroarch")
 
         print('restarting...')
         #self.retroKiller.restart()
