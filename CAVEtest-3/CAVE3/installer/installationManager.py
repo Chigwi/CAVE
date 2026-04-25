@@ -8,7 +8,7 @@ try:
     from installer.playlist import PlaylistInstaller
     from installer.retrochecker import RetroarchChecker
     from installer.config import Configuration
-    from installer.retrokiller import Retrokiller
+    from installer.retrokiller import RetroKiller
 except ImportError:
     from CAVE3.installer.Rom import ROMInstaller
     from CAVE3.installer.core import CoreInstaller
@@ -16,7 +16,7 @@ except ImportError:
     from CAVE3.installer.playlist import PlaylistInstaller
     from CAVE3.installer.retrochecker import RetroarchChecker
     from CAVE3.installer.config import Configuration
-    from CAVE3.installer.retrokiller import Retrokiller
+    from CAVE3.installer.retrokiller import RetroKiller
 
 
 class InstallationManager:
@@ -35,7 +35,7 @@ class InstallationManager:
         #brings the relevant configuration
         self.configInstaller = Configuration()
         #brings the retrokiller tool
-        self.retrokiller = Retrokiller()
+        self.retrokiller = RetroKiller()
 
 
     def install(self):
