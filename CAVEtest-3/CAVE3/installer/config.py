@@ -13,7 +13,7 @@ class Configuration:
     #runs the processes in order
     def run(self):
         #installs the configuration
-        self._install_configuration
+        self._install_configuration()
 
 
     #main function, installs the needed configuration onto the retroarch machine

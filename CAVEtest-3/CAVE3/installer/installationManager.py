@@ -6,6 +6,7 @@ try:
     from installer.distro import DistroChecker
     from installer.playlist import PlaylistInstaller
     from installer.retrochecker import RetroarchChecker
+    from installer.config import Configuration
 except ImportError:
     from CAVE3.installer.Rom import ROMInstaller
     from CAVE3.installer.core import CoreInstaller
