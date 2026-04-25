@@ -1,4 +1,5 @@
 import os
+import time
 
 try:
     from installer.Rom import ROMInstaller
@@ -7,6 +8,7 @@ try:
     from installer.playlist import PlaylistInstaller
     from installer.retrochecker import RetroarchChecker
     from installer.config import Configuration
+    from installer.retrokiller import Retrokiller
 except ImportError:
     from CAVE3.installer.Rom import ROMInstaller
     from CAVE3.installer.core import CoreInstaller
@@ -14,6 +16,7 @@ except ImportError:
     from CAVE3.installer.playlist import PlaylistInstaller
     from CAVE3.installer.retrochecker import RetroarchChecker
     from CAVE3.installer.config import Configuration
+    from CAVE3.installer.retrokiller import Retrokiller
 
 
 class InstallationManager:
@@ -31,6 +34,9 @@ class InstallationManager:
         self.playlistInstaller = PlaylistInstaller()
         #brings the relevant configuration
         self.configInstaller = Configuration()
+        #brings the retrokiller tool
+        self.retrokiller = Retrokiller()
+
 
     def install(self):
         #checks the distro
@@ -42,4 +48,9 @@ class InstallationManager:
         self.romInstaller.run()
         self.playlistInstaller.run()
         self.configInstaller.run()
+
+        #waits for retroarch to open
+        time.sleep(2)
+        #restarts retroarch
+        self.retrokiller.restart()
         #comentario
