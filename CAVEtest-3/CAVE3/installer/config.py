@@ -10,6 +10,7 @@ class Configuration:
 
     def __init__(self):
         # adds the path of where the config file is
+        self.retroKiller = None
         self.dest = os.path.expanduser('~/.config/retroarch/config')
 
 
@@ -17,7 +18,6 @@ class Configuration:
     def run(self):
         #installs the configuration
         self._install_configuration()
-        self.retroKiller = RetroKiller()
 
 
     #main function, installs the needed configuration onto the retroarch machine
