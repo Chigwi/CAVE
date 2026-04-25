@@ -37,26 +37,28 @@ class InstallationManager:
         #brings the retrokiller tool
         self.retrokiller = RetroKiller()
 
-
     def install(self):
-        #checks the distro
         distro = self.distro.get_package_manager()
-        #installs retroarch first
         self.checker.install_retroarch(distro)
-        #proceeds with the installation in optimal order
         self.coreInstaller.run()
         self.romInstaller.run()
         self.playlistInstaller.run()
 
-        print('abre retroarch para crear archivo .cfg')
+        print('abre retroarch')
+        # open retroarch ONCE to generate the initial retroarch.cfg
         self.retrokiller.safeStart()
-        time.sleep(5)
-        print ('cierra retroarch')
-        self.retrokiller.safeStop()
+        time.sleep(5)  # wait for it to generate the file
 
-        print('instala nuevo archivo .cfg')
+        print('cierra retroarch')
+        # kill it BEFORE it can save its session back to cfg
+        self.retrokiller.safeStop()
+        time.sleep(2)
+
+        print('remplazamos el .cfg')
+        # NOW replace the cfg while retroarch is fully closed
         self.configInstaller.run()
 
-        print('abre y reinicia')
+        print('abre retroarch')
+        # open one final time - it will read our cfg on startup
+        # do NOT close it after this, let the user have it open
         self.retrokiller.safeStart()
-        self.retrokiller.restart()
