@@ -20,11 +20,12 @@ class RetroKiller:
 
     #kills the current retroarch process
     def _killRetroarch(self):
-        if shutil.which('retroarch') is not None:
+        result = subprocess.run(['pgrep', 'retroarch'], stdout=subprocess.PIPE)
+        if result.returncode == 0:  # 0 means process was found
             print('Closing Retroarch')
             os.system('pkill retroarch')
         else:
-            print ('Retroarch already closed, opening again')
+            print('Retroarch is not running')
 
     #births a new retroarch ´process
     def _birthRetroarch(self):

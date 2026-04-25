@@ -50,9 +50,9 @@ class InstallationManager:
 
         print('abre retroarch para crear archivo .cfg')
         self.retrokiller.safeStart()
-        time.sleep(1)
+        time.sleep(5)
         print ('cierra retroarch')
-        self.retrokiller.safeStart()
+        self.retrokiller.safeStop()
 
         print('instala nuevo archivo .cfg')
         self.configInstaller.run()

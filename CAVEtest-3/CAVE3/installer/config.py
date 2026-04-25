@@ -26,7 +26,7 @@ class Configuration:
         #replaces og config with our config
         shutil.copy2(self.source, self.dest)
         #gives permissions
-        os.system(f"chmod 744'{self.dest}'")
+        os.system(f"chmod 744 '{self.dest}'")
 
     def _resource_path(self, relative):
         base = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
