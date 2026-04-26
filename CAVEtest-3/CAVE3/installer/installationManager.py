@@ -58,7 +58,10 @@ class InstallationManager:
         # NOW replace the cfg while retroarch is fully closed
         self.configInstaller.run()
 
-        print('abre retroarch')
-        # open one final time - it will read our cfg on startup
-        # do NOT close it after this, let the user have it open
-        self.retrokiller.safeStart()
+        print('reinicia retroarch')
+        #restarts to make sure retroarch reads the new cfg file
+        self.retrokiller.restart()
+
+        #kills retroarch to finalize the installation
+        print('cierra retroarch')
+        self.retrokiller.safeStop()
