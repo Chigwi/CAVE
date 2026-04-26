@@ -11,70 +11,70 @@
     {
       "path": "~/.config/retroarch/ROMS/n_64/Donkey Kong 64 (USA).n64.zip",
       "label": "Donkey Kong 64 (USA)",
-      "core_path": "~/.config/retroarch/cores/parallel_n64_libretro.so/",
+      "core_path": "~/.config/retroarch/cores/parallel_n64_libretro.so",
       "core_name": "Nintendo 64",
       "crc32": "DETECT",
       "db_name": "Nintendo - Nintendo 64.lpl"
     },{
       "path": "~/.config/retroarch/ROMS/n_64/Doom 64 (USA) (Rev A).n64.zip",
       "label": "Doom (USA)",
-      "core_path": "~/.config/retroarch/cores/parallel_n64_libretro.so/",
+      "core_path": "~/.config/retroarch/cores/parallel_n64_libretro.so",
       "core_name": "Nintendo 64",
       "crc32": "DETECT",
       "db_name": "Nintendo - Nintendo 64.lpl"
     },{
       "path": "~/.config/retroarch/ROMS/n_64/Mario Party 3 (USA).n64.zip",
       "label": "Mario Party 3 (USA)",
-      "core_path": "~/.config/retroarch/cores/parallel_n64_libretro.so/",
+      "core_path": "~/.config/retroarch/cores/parallel_n64_libretro.so",
       "core_name": "Nintendo 64",
       "crc32": "DETECT",
       "db_name": "Nintendo - Nintendo 64.lpl"
     },{
       "path": "~/.config/retroarch/ROMS/n_64/Mortal Kombat 4 (USA).n64.zip",
       "label": "Mortal Kombat 4 (USA)",
-      "core_path": "~/.config/retroarch/cores/parallel_n64_libretro.so/",
+      "core_path": "~/.config/retroarch/cores/parallel_n64_libretro.so",
       "core_name": "Nintendo 64",
       "crc32": "DETECT",
       "db_name": "Nintendo - Nintendo 64.lpl"
     },{
       "path": "~/.config/retroarch/ROMS/n_64/Pokemon Snap (USA).n64.zip",
       "label": "Pokemon Snap (USA)",
-      "core_path": "~/.config/retroarch/cores/parallel_n64_libretro.so/",
+      "core_path": "~/.config/retroarch/cores/parallel_n64_libretro.so",
       "core_name": "Nintendo 64",
       "crc32": "DETECT",
       "db_name": "Nintendo - Nintendo 64.lpl"
     },{
       "path": "~/.config/retroarch/ROMS/n_64/Pokemon Stadium (USA) (Rev A).n64.zip",
       "label": "Pokemon Stadium (USA)",
-      "core_path": "~/.config/retroarch/cores/parallel_n64_libretro.so/",
+      "core_path": "~/.config/retroarch/cores/parallel_n64_libretro.so",
       "core_name": "Nintendo 64",
       "crc32": "DETECT",
       "db_name": "Nintendo - Nintendo 64.lpl"
     },{
       "path": "~/.config/retroarch/ROMS/n_64/Star Fox 64 (USA) (Rev A).n64.zip",
       "label": "Star Fox 64 (USA)",
-      "core_path": "~/.config/retroarch/cores/parallel_n64_libretro.so/",
+      "core_path": "~/.config/retroarch/cores/parallel_n64_libretro.so",
       "core_name": "Nintendo 64",
       "crc32": "DETECT",
       "db_name": "Nintendo - Nintendo 64.lpl"
     },{
       "path": "~/.config/retroarch/ROMS/n_64/Super Mario 64 (USA).n64.zip",
       "label": "Super Mario 64 (USA)",
-      "core_path": "~/.config/retroarch/cores/parallel_n64_libretro.so/",
+      "core_path": "~/.config/retroarch/cores/parallel_n64_libretro.so",
       "core_name": "Nintendo 64",
       "crc32": "DETECT",
       "db_name": "Nintendo - Nintendo 64.lpl"
     },{
       "path": "~/.config/retroarch/ROMS/n_64/Super Smash Bros. (USA).n64.zip",
       "label": "Super Smash Bros (USA)",
-      "core_path": "~/.config/retroarch/cores/parallel_n64_libretro.so/",
+      "core_path": "~/.config/retroarch/cores/parallel_n64_libretro.so",
       "core_name": "Nintendo 64",
       "crc32": "DETECT",
       "db_name": "Nintendo - Nintendo 64.lpl"
     },{
       "path": "~/.config/retroarch/ROMS/n_64/Toy Story 2 (USA).n64.zip",
       "label": "Toy Story 2 (USA)",
-      "core_path": "~/.config/retroarch/cores/parallel_n64_libretro.so/",
+      "core_path": "~/.config/retroarch/cores/parallel_n64_libretro.so",
       "core_name": "Nintendo 64",
       "crc32": "DETECT",
       "db_name": "Nintendo - Nintendo 64.lpl"
