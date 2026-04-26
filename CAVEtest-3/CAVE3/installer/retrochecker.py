@@ -21,9 +21,9 @@ class RetroarchChecker:
             return
         # installs retroarch acording to the current distro
         elif (package_manager == 'apt'):
-            os.system('sudo apt install retroarch')
+            os.system('sudo apt install -y retroarch')
         elif (package_manager == 'dnf'):
-            os.system('sudo dnf install retroarch')
+            os.system('sudo dnf install -y retroarch')
         elif (package_manager == 'pacman'):
-            os.system('sudo pacman -S retroarch')
+            os.system('sudo pacman -S --noconfirm retroarch')
 
